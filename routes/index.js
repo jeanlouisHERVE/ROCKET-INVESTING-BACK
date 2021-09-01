@@ -23,7 +23,7 @@ router.post('/sign-up', async (req, res) => {
   var saveUser = null
   var token = null
 
-  // recherche et récupération d'un User existant dasns la BDD depuis l'input du front
+  // recherche et récupération d'un User existant dasns la BDD depuis l'input du front bonjour
   const data = await userModel.findOne({username: req.body.usernameFromFront})
 
   // si la variable data n'est pas "null" alors l'utilisateur existe ==> Affichage du texte "utilisateur deja présent"
